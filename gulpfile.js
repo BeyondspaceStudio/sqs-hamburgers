@@ -6,7 +6,7 @@ var cssnano      = require('gulp-cssnano');
 var notify       = require('gulp-notify');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
-var sass         = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var sourcemaps   = require('gulp-sourcemaps');
 
 var onError = function(err) {
@@ -50,11 +50,11 @@ gulp.task('watch', function() {
 
   browserSync.init(browserSyncConfig);
 
-  gulp.watch('_sass/**/*.scss', ['sass']);
+  gulp.watch('_sass/**/*.scss', gulp.series('sass'));
 });
 
-gulp.task('build', ['sass']);
+gulp.task('build', gulp.series('sass'));
 
-gulp.task('dist', ['dist:css']);
+gulp.task('dist', gulp.series('dist:css'));
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', gulp.series('build', 'watch'));

@@ -30,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/jonsuh/hamburgers/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^4.0.2",
@@ -41,6 +40,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "sass": "^1.62.0"
   }
 }
