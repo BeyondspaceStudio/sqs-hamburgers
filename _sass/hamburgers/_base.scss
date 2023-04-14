@@ -78,7 +78,7 @@
 .burger-inner {
   display: block;
   top: 50%;
-  margin-top: math.div($hamburger-layer-height, -2);
+  margin-top: $hamburger-layer-height;
 
   &,
   &::before,
