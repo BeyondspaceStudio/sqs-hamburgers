@@ -2,8 +2,8 @@
   /*
    * Vortex
    */
-  .hamburger--vortex {
-    .hamburger-inner {
+  .header-burger-btn {
+    .burger-inner {
       transition-duration: 0.2s;
       transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -23,8 +23,8 @@
       }
     }
 
-    &.is-active {
-      .hamburger-inner {
+    &.burger--active {
+      .burger-inner {
         transform: rotate(765deg);
         transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 

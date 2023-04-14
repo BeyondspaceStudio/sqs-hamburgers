@@ -4,8 +4,8 @@
   /*
    * Slider Reverse
    */
-  .hamburger--slider-r {
-    .hamburger-inner {
+  .header-burger-btn {
+    .burger-inner {
       top: math.div($hamburger-layer-height, 2);
 
       &::before {
@@ -20,8 +20,8 @@
       }
     }
 
-    &.is-active {
-      .hamburger-inner {
+    &.burger--active {
+      .burger-inner {
         $y-offset: $hamburger-layer-spacing + $hamburger-layer-height;
 
         transform: translate3d(0, $y-offset, 0) rotate(-45deg);
