@@ -2,8 +2,8 @@
   /*
    * Spin Reverse
    */
-  .hamburger--spin-r {
-    .hamburger-inner {
+  .header-burger-btn {
+    .burger-inner {
       transition-duration: 0.22s;
       transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
@@ -18,8 +18,8 @@
       }
     }
 
-    &.is-active {
-      .hamburger-inner {
+    &.burger--active {
+      .burger-inner {
         transform: rotate(-225deg);
         transition-delay: 0.12s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);

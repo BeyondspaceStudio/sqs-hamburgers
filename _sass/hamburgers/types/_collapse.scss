@@ -2,8 +2,8 @@
   /*
    * Collapse
    */
-  .hamburger--collapse {
-    .hamburger-inner {
+  .header-burger-btn {
+    .burger-inner {
       top: auto;
       bottom: 0;
       transition-duration: 0.13s;
@@ -22,8 +22,8 @@
       }
     }
 
-    &.is-active {
-      .hamburger-inner {
+    &.burger--active {
+      .burger-inner {
         transform: translate3d(0, ($hamburger-layer-spacing + $hamburger-layer-height) * -1, 0) rotate(-45deg);
         transition-delay: 0.22s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);

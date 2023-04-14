@@ -2,10 +2,10 @@
   /*
    * Emphatic
    */
-  .hamburger--emphatic {
+  .header-burger-btn {
     overflow: hidden;
 
-    .hamburger-inner {
+    .burger-inner {
       transition: background-color 0.125s 0.175s ease-in;
 
       &::before {
@@ -24,8 +24,8 @@
       }
     }
 
-    &.is-active {
-      .hamburger-inner {
+    &.burger--active {
+      .burger-inner {
         transition-delay: 0s;
         transition-timing-function: ease-out;
         background-color: transparent !important;

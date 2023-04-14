@@ -1,8 +1,18 @@
 @use "sass:math";
 
+// Neutralize Squarespace Hamburger
+// ==================================================
+.burger-inner {
+  .top-bun,
+  .patty,
+  .bottom-bun {
+    opacity: 0 !important;
+  }
+}
+
 // Hamburger
 // ==================================================
-.hamburger {
+.header-burger-btn {
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
@@ -29,7 +39,7 @@
     }
   }
 
-  &.is-active {
+  &.burger--active {
     &:hover {
       @if $hamburger-hover-use-filter == true {
         filter: $hamburger-active-hover-filter;
@@ -39,22 +49,22 @@
       }
     }
 
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
+    .burger-inner,
+    .burger-inner::before,
+    .burger-inner::after {
       background-color: $hamburger-active-layer-color;
     }
   }
 }
 
-.hamburger-box {
+.burger-box {
   width: $hamburger-layer-width;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
   position: relative;
 }
 
-.hamburger-inner {
+.burger-inner {
   display: block;
   top: 50%;
   margin-top: math.div($hamburger-layer-height, -2);
