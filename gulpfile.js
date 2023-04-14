@@ -68,4 +68,3 @@ gulp.task('build', gulp.series('sass'));
 gulp.task('dist', gulp.series('dist:css'));
 
 gulp.task('default', gulp.series('build', 'watch'));
-/* Find the URL at http://localhost:3001/dist/example.html */
