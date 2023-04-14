@@ -35,8 +35,12 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
+const hamburgerTypes = require('./config/hamburger_types.json');
+
 gulp.task('dist:css', function() {
-  var types = [    '3dx',    '3dx-r',    '3dy',    '3dy-r',    '3dxy',    '3dxy-r',    'arrow',    'arrow-r',    'arrowalt',    'arrowalt-r',    'arrowturn',    'arrowturn-r',    'boring',    'collapse',    'collapse-r',    'elastic',    'elastic-r',    'emphatic',    'emphatic-r',    'minus',    'slider',    'slider-r',    'spin',    'spin-r',    'spring',    'spring-r',    'stand',    'stand-r',    'squeeze',    'vortex',    'vortex-r'  ];
+  const types = hamburgerTypes.map(function(type) {
+    return type.name;
+  });
 
   var streams = types.map(function(type) {
     return gulp.src('_sass/hamburgers/hamburgers.scss')
