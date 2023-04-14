@@ -1,0 +1,126 @@
+[
+    {
+        "name": "3dx",
+        "label": "3Dx"
+    },
+    {
+        "name": "3dx-r",
+        "label": "3Dx Reverse"
+    },
+    {
+        "name": "3dy",
+        "label": "3Dy"
+    },
+    {
+        "name": "3dy-r",
+        "label": "3Dy Reverse"
+    },
+    {
+        "name": "3dxy",
+        "label": "3Dxy"
+    },
+    {
+        "name": "3dxy-r",
+        "label": "3Dxy Reverse"
+    },
+    {
+        "name": "arrow",
+        "label": "Arrow"
+    },
+    {
+        "name": "arrow-r",
+        "label": "Arrow Reverse"
+    },
+    {
+        "name": "arrowalt",
+        "label": "Arrow Alt"
+    },
+    {
+        "name": "arrowalt-r",
+        "label": "Arrow Alt Reserve"
+    },
+    {
+        "name": "arrowturn",
+        "label": "Arrow Turn"
+    },
+    {
+        "name": "arrowturn-r",
+        "label": "Arrow Turn Reverse"
+    },
+    {
+        "name": "boring",
+        "label": "Boring"
+    },
+    {
+        "name": "collapse",
+        "label": "Collapse"
+    },
+    {
+        "name": "collapse-r",
+        "label": "Collapse Reverse"
+    },
+    {
+        "name": "elastic",
+        "label": "Elastic"
+    },
+    {
+        "name": "elastic-r",
+        "label": "Elastic Reverse"
+    },
+    {
+        "name": "emphatic",
+        "label": "Emphatic"
+    },
+    {
+        "name": "emphatic-r",
+        "label": "Emphatic Reverse"
+    },
+    {
+        "name": "minus",
+        "label": "Minus"
+    },
+    {
+        "name": "slider",
+        "label": "Slider"
+    },
+    {
+        "name": "slider-r",
+        "label": "Slider Reverse"
+    },
+    {
+        "name": "spin",
+        "label": "Spin"
+    },
+    {
+        "name": "spin-r",
+        "label": "Spin Reverse"
+    },
+    {
+        "name": "spring",
+        "label": "Spring"
+    },
+    {
+        "name": "spring-r",
+        "label": "Spring Reverse"
+    },
+    {
+        "name": "stand",
+        "label": "Stand"
+    },
+    {
+        "name": "stand-r",
+        "label": "Stand Reverse"
+    },
+    {
+        "name": "squeeze",
+        "label": "Squeeze"
+    },
+    {
+        "name": "vortex",
+        "label": "Vortex"
+    },
+    {
+        "name": "vortex-r",
+        "label": "Vortex Reverse"
+    }
+]
