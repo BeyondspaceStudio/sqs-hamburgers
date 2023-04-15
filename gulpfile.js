@@ -42,10 +42,14 @@ gulp.task('dist:css', function() {
     return type.name;
   });
 
+  let bundleTypesImport = '';
   var streams = types.map(function(type) {
+    const singleTypeImport = '@import "types/' + type + '";';
+    bundleTypesImport += singleTypeImport;
+
     return gulp.src('_sass/hamburgers/hamburgers.scss')
       .pipe(sass({
-        data: '@import "types/' + type + '";'
+        data: singleTypeImport
       }))
       .pipe(autoprefixer(autoprefixerOptions))
       .pipe(gulp.dest('dist'))
@@ -54,8 +58,18 @@ gulp.task('dist:css', function() {
       .pipe(rename('hamburgers-' + type + '.min.css'))
       .pipe(gulp.dest('dist'));
   });
+console.log(bundleTypesImport);
+  var bundleStream = gulp.src('_sass/hamburgers/hamburgers.scss')
+    .pipe(sass({
+      data: bundleTypesImport
+    }))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest('dist'))
+    .pipe(csscomb('.csscomb.dist.json'))
+    // .pipe(cssnano())
+    .pipe(rename('hamburgers.min.css'))
 
-  return merge(streams);
+  return merge(streams, bundleStream);
 });
 
 
