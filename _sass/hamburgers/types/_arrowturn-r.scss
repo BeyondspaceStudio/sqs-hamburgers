@@ -2,6 +2,7 @@
   /*
    * Arrow Turn Right
    */
+  .header-burger-btn.hamburger--arrowturn-r.burger--active,
   .header-burger-btn.burger--active {
     .burger-inner {
       transform: rotate(-180deg);

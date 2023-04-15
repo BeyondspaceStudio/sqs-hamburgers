@@ -95,26 +95,1075 @@
 }
 
 /*
+ * Vortex Reverse
+ */
+.header-burger-btn.hamburger--vortex-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::before, .header-burger-btn.hamburger--vortex-r .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-765deg);
+          transform: rotate(-765deg);
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::before, .header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}r-burger-btn.hamburger--3dx-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dx-r .burger-inner::before, .header-burger-btn.hamburger--3dx-r .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dx-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  background-color: transparent !important;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.header-burger-btn.hamburger--3dx-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--3dx-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+}
+
+/*
+ * 3DY
+ */
+.header-burger-btn.hamburger--3dy .burger-box,
+.header-burger-btn .burger-box {
+  -webkit-perspective: 70px;
+          perspective: 70px;
+}
+.header-burger-btn.hamburger--3dy .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dy .burger-inner::before, .header-burger-btn.hamburger--3dy .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dy.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  background-color: transparent !important;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.header-burger-btn.hamburger--3dy.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--3dy.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+}
+
+/*
+ * 3DY Reverse
+ */
+.header-burger-btn.hamburger--3dy-r .burger-box,
+.header-burger-btn .burger-box {
+  -webkit-perspective: 70px;
+          perspective: 70px;
+}
+.header-burger-btn.hamburger--3dy-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dy-r .burger-inner::before, .header-burger-btn.hamburger--3dy-r .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dy-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  background-color: transparent !important;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+.header-burger-btn.hamburger--3dy-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--3dy-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+}
+
+/*
+ * 3DXY
+ */
+.header-burger-btn.hamburger--3dxy .burger-box,
+.header-burger-btn .burger-box {
+  -webkit-perspective: 70px;
+          perspective: 70px;
+}
+.header-burger-btn.hamburger--3dxy .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dxy .burger-inner::before, .header-burger-btn.hamburger--3dxy .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dxy.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  background-color: transparent !important;
+  -webkit-transform: rotateX(180deg) rotateY(180deg);
+          transform: rotateX(180deg) rotateY(180deg);
+}
+.header-burger-btn.hamburger--3dxy.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--3dxy.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+}
+
+/*
+ * 3DXY Reverse
+ */
+.header-burger-btn.hamburger--3dxy-r .burger-box,
+.header-burger-btn .burger-box {
+  -webkit-perspective: 70px;
+          perspective: 70px;
+}
+.header-burger-btn.hamburger--3dxy-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dxy-r .burger-inner::before, .header-burger-btn.hamburger--3dxy-r .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.header-burger-btn.hamburger--3dxy-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  background-color: transparent !important;
+  -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
+          transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
+}
+.header-burger-btn.hamburger--3dxy-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--3dxy-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+}
+
+/*
+ * Arrow
+ */
+.header-burger-btn.hamburger--arrow.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(-7px, 0, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(-7px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+.header-burger-btn.hamburger--arrow.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(-7px, 0, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(-7px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+
+/*
+ * Arrow Right
+ */
+.header-burger-btn.hamburger--arrow-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(7px, 0, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(7px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+.header-burger-btn.hamburger--arrow-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(7px, 0, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(7px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+
+/*
+ * Arrow Alt
+ */
+.header-burger-btn.hambuger--arrowalt .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header-burger-btn.hambuger--arrowalt .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header-burger-btn.hambuger--arrowalt.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: translate3d(-7px, -8.75px, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(-7px, -8.75px, 0) rotate(-45deg) scale(0.7, 1);
+  -webkit-transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.header-burger-btn.hambuger--arrowalt.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: translate3d(-7px, 8.75px, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(-7px, 8.75px, 0) rotate(45deg) scale(0.7, 1);
+  -webkit-transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/*
+ * Arrow Alt Right
+ */
+.header-burger-btn.hamburger--arrowalt-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header-burger-btn.hamburger--arrowalt-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.header-burger-btn.hamburger--arrowalt-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: translate3d(7px, -8.75px, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(7px, -8.75px, 0) rotate(45deg) scale(0.7, 1);
+  -webkit-transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.header-burger-btn.hamburger--arrowalt-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: translate3d(7px, 8.75px, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(7px, 8.75px, 0) rotate(-45deg) scale(0.7, 1);
+  -webkit-transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/*
+ * Arrow Turn
+ */
+.header-burger-btn.hamburger--arrowturn.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.header-burger-btn.hamburger--arrowturn.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+.header-burger-btn.hamburger--arrowturn.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+
+/*
+ * Arrow Turn Right
+ */
+.header-burger-btn.hamburger--arrowturn-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.header-burger-btn.hamburger--arrowturn-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+          transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+}
+.header-burger-btn.hamburger--arrowturn-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
+          transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
+}
+
+/*
+ * Boring
+ */
+.header-burger-btn.hamburger--boring .burger-inner, .header-burger-btn.hamburger--boring .burger-inner::before, .header-burger-btn.hamburger--boring .burger-inner::after,
+.header-burger-btn .burger-inner,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+.header-burger-btn.hamburger--boring.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header-burger-btn.hamburger--boring.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--boring.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+/*
+ * Collapse
+ */
+.header-burger-btn.hamburger--collapse .burger-inner,
+.header-burger-btn .burger-inner {
+  top: auto;
+  bottom: 0;
+  -webkit-transition-duration: 0.13s;
+          transition-duration: 0.13s;
+  -webkit-transition-delay: 0.13s;
+          transition-delay: 0.13s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--collapse .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: -18px;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+.header-burger-btn.hamburger--collapse .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--collapse.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--collapse.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+.header-burger-btn.hamburger--collapse.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Collapse Reverse
+ */
+.header-burger-btn.hamburger--collapse-r .burger-inner,
+.header-burger-btn .burger-inner {
+  top: auto;
+  bottom: 0;
+  -webkit-transition-duration: 0.13s;
+          transition-duration: 0.13s;
+  -webkit-transition-delay: 0.13s;
+          transition-delay: 0.13s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--collapse-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: -18px;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+.header-burger-btn.hamburger--collapse-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--collapse-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(45deg);
+          transform: translate3d(0, -9px, 0) rotate(45deg);
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--collapse-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+.header-burger-btn.hamburger--collapse-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Elastic
+ */
+.header-burger-btn.hamburger--elastic .burger-inner,
+.header-burger-btn .burger-inner {
+  top: 1.5px;
+  -webkit-transition-duration: 0.275s;
+          transition-duration: 0.275s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.header-burger-btn.hamburger--elastic .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  top: 9px;
+  -webkit-transition: opacity 0.125s 0.275s ease;
+  transition: opacity 0.125s 0.275s ease;
+}
+.header-burger-btn.hamburger--elastic .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 18px;
+  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.header-burger-btn.hamburger--elastic.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(135deg);
+          transform: translate3d(0, 9px, 0) rotate(135deg);
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
+}
+.header-burger-btn.hamburger--elastic.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--elastic.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -18px, 0) rotate(-270deg);
+          transform: translate3d(0, -18px, 0) rotate(-270deg);
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
+}
+
+/*
+ * Elastic Reverse
+ */
+.header-burger-btn.hamburger--elastic-r .burger-inner,
+.header-burger-btn .burger-inner {
+  top: 1.5px;
+  -webkit-transition-duration: 0.275s;
+          transition-duration: 0.275s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.header-burger-btn.hamburger--elastic-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  top: 9px;
+  -webkit-transition: opacity 0.125s 0.275s ease;
+  transition: opacity 0.125s 0.275s ease;
+}
+.header-burger-btn.hamburger--elastic-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 18px;
+  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.header-burger-btn.hamburger--elastic-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(-135deg);
+          transform: translate3d(0, 9px, 0) rotate(-135deg);
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
+}
+.header-burger-btn.hamburger--elastic-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--elastic-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -18px, 0) rotate(270deg);
+          transform: translate3d(0, -18px, 0) rotate(270deg);
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
+}
+
+/*
+ * Emphatic
+ */
+.header-burger-btn.hamburger--emphatic,
+.header-burger-btn {
+  overflow: hidden;
+}
+.header-burger-btn.hamburger--emphatic .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0.125s 0.175s ease-in;
+  transition: background-color 0.125s 0.175s ease-in;
+}
+.header-burger-btn.hamburger--emphatic .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  left: 0;
+  -webkit-transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.header-burger-btn.hamburger--emphatic .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 9px;
+  right: 0;
+  -webkit-transition: top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.header-burger-btn.hamburger--emphatic.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  background-color: transparent !important;
+}
+.header-burger-btn.hamburger--emphatic.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  left: -70px;
+  top: -70px;
+  -webkit-transform: translate3d(70px, 70px, 0) rotate(45deg);
+          transform: translate3d(70px, 70px, 0) rotate(45deg);
+  -webkit-transition: left 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-burger-btn.hamburger--emphatic.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  right: -70px;
+  top: -70px;
+  -webkit-transform: translate3d(-70px, 70px, 0) rotate(-45deg);
+          transform: translate3d(-70px, 70px, 0) rotate(-45deg);
+  -webkit-transition: right 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*
+ * Emphatic Reverse
+ */
+.header-burger-btn.hamburger--emphatic-r,
+.header-burger-btn {
+  overflow: hidden;
+}
+.header-burger-btn.hamburger--emphatic-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0.125s 0.175s ease-in;
+  transition: background-color 0.125s 0.175s ease-in;
+}
+.header-burger-btn.hamburger--emphatic-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  left: 0;
+  -webkit-transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.header-burger-btn.hamburger--emphatic-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 9px;
+  right: 0;
+  -webkit-transition: top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.header-burger-btn.hamburger--emphatic-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  background-color: transparent !important;
+}
+.header-burger-btn.hamburger--emphatic-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  left: -70px;
+  top: 70px;
+  -webkit-transform: translate3d(70px, -70px, 0) rotate(-45deg);
+          transform: translate3d(70px, -70px, 0) rotate(-45deg);
+  -webkit-transition: left 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-burger-btn.hamburger--emphatic-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  right: -70px;
+  top: 70px;
+  -webkit-transform: translate3d(-70px, -70px, 0) rotate(45deg);
+          transform: translate3d(-70px, -70px, 0) rotate(45deg);
+  -webkit-transition: right 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*
+ * Minus
+ */
+.header-burger-btn.hamburger--minus .burger-inner::before, .header-burger-btn.hamburger--minus .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
+  transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
+}
+.header-burger-btn.hamburger--minus.burger--active .burger-inner::before, .header-burger-btn.hamburger--minus.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::after {
+  opacity: 0;
+  -webkit-transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
+  transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
+}
+.header-burger-btn.hamburger--minus.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+}
+.header-burger-btn.hamburger--minus.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+}
+
+/*
+ * Slider
+ */
+.header-burger-btn.hamburger--slider .burger-inner,
+.header-burger-btn .burger-inner {
+  top: 1.5px;
+}
+.header-burger-btn.hamburger--slider .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  top: 9px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+.header-burger-btn.hamburger--slider .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 18px;
+}
+.header-burger-btn.hamburger--slider.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--slider.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: rotate(-45deg) translate3d(-5px, -6px, 0);
+          transform: rotate(-45deg) translate3d(-5px, -6px, 0);
+  opacity: 0;
+}
+.header-burger-btn.hamburger--slider.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -18px, 0) rotate(-90deg);
+          transform: translate3d(0, -18px, 0) rotate(-90deg);
+}
+
+/*
+ * Slider Reverse
+ */
+.header-burger-btn.hamburger--slider-r .burger-inner,
+.header-burger-btn .burger-inner {
+  top: 1.5px;
+}
+.header-burger-btn.hamburger--slider-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  top: 9px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+.header-burger-btn.hamburger--slider-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 18px;
+}
+.header-burger-btn.hamburger--slider-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, 9px, 0) rotate(-45deg);
+          transform: translate3d(0, 9px, 0) rotate(-45deg);
+}
+.header-burger-btn.hamburger--slider-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  -webkit-transform: rotate(45deg) translate3d(5px, -6px, 0);
+          transform: rotate(45deg) translate3d(5px, -6px, 0);
+  opacity: 0;
+}
+.header-burger-btn.hamburger--slider-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transform: translate3d(0, -18px, 0) rotate(90deg);
+          transform: translate3d(0, -18px, 0) rotate(90deg);
+}
+
+/*
+ * Spin
+ */
+.header-burger-btn.hamburger--spin .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.22s;
+          transition-duration: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spin .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.header-burger-btn.hamburger--spin .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spin.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--spin.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.header-burger-btn.hamburger--spin.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Spin Reverse
+ */
+.header-burger-btn.hamburger--spin-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.22s;
+          transition-duration: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spin-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.header-burger-btn.hamburger--spin-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spin-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--spin-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.header-burger-btn.hamburger--spin-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Spring
+ */
+.header-burger-btn.hamburger--spring .burger-inner,
+.header-burger-btn .burger-inner {
+  top: 1.5px;
+  -webkit-transition: background-color 0s 0.13s linear;
+  transition: background-color 0s 0.13s linear;
+}
+.header-burger-btn.hamburger--spring .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  top: 9px;
+  -webkit-transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spring .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: 18px;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spring.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  background-color: transparent !important;
+}
+.header-burger-btn.hamburger--spring.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: translate3d(0, 9px, 0) rotate(45deg);
+          transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.header-burger-btn.hamburger--spring.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  top: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: translate3d(0, 9px, 0) rotate(-45deg);
+          transform: translate3d(0, 9px, 0) rotate(-45deg);
+}
+
+/*
+ * Spring Reverse
+ */
+.header-burger-btn.hamburger--spring-r .burger-inner,
+.header-burger-btn .burger-inner {
+  top: auto;
+  bottom: 0;
+  -webkit-transition-duration: 0.13s;
+          transition-duration: 0.13s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spring-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  top: -18px;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
+}
+.header-burger-btn.hamburger--spring-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--spring-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
+          transform: translate3d(0, -9px, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--spring-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
+}
+.header-burger-btn.hamburger--spring-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
  * Stand
  */
+.header-burger-btn.hamburger--stand .burger-inner,
 .header-burger-btn .burger-inner {
   -webkit-transition: background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+.header-burger-btn.hamburger--stand .burger-inner::before,
 .header-burger-btn .burger-inner::before {
   -webkit-transition: top 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: top 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+.header-burger-btn.hamburger--stand .burger-inner::after,
 .header-burger-btn .burger-inner::after {
   -webkit-transition: bottom 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: bottom 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+.header-burger-btn.hamburger--stand.burger--active .burger-inner,
 .header-burger-btn.burger--active .burger-inner {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -124,6 +1173,7 @@
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear, -webkit-transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+.header-burger-btn.hamburger--stand.burger--active .burger-inner::before,
 .header-burger-btn.burger--active .burger-inner::before {
   top: 0;
   -webkit-transform: rotate(-45deg);
@@ -133,6 +1183,7 @@
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+.header-burger-btn.hamburger--stand.burger--active .burger-inner::after,
 .header-burger-btn.burger--active .burger-inner::after {
   bottom: 0;
   -webkit-transform: rotate(45deg);
@@ -141,5 +1192,222 @@
   transition: bottom 0.075s 0.1s ease-out, -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
-}355, 1);
+}
+
+/*
+ * Stand Reverse
+ */
+.header-burger-btn.hamburger--stand-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition: background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
+  transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear, -webkit-transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--stand-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--stand-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.075s ease-in, -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--stand-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: transparent !important;
+  -webkit-transition: background-color 0s 0.15s linear, -webkit-transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 0s 0.15s linear, -webkit-transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
+  transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear, -webkit-transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--stand-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: top 0.075s 0.1s ease-out, -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.075s 0.1s ease-out, -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--stand-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: bottom 0.075s 0.1s ease-out, -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s 0.1s ease-out, -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Squeeze
+ */
+.header-burger-btn.hamburger--squeeze .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.075s;
+          transition-duration: 0.075s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--squeeze .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.header-burger-btn.hamburger--squeeze .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.header-burger-btn.hamburger--squeeze.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-burger-btn.hamburger--squeeze.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.header-burger-btn.hamburger--squeeze.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Vortex
+ */
+.header-burger-btn.hamburger--vortex .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex .burger-inner::before, .header-burger-btn.hamburger--vortex .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.header-burger-btn.hamburger--vortex .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+}
+.header-burger-btn.hamburger--vortex .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+.header-burger-btn.hamburger--vortex.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(765deg);
+          transform: rotate(765deg);
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex.burger--active .burger-inner::before, .header-burger-btn.hamburger--vortex.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.header-burger-btn.hamburger--vortex.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--vortex.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*
+ * Vortex Reverse
+ */
+.header-burger-btn.hamburger--vortex-r .burger-inner,
+.header-burger-btn .burger-inner {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::before, .header-burger-btn.hamburger--vortex-r .burger-inner::after,
+.header-burger-btn .burger-inner::before,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::before,
+.header-burger-btn .burger-inner::before {
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+}
+.header-burger-btn.hamburger--vortex-r .burger-inner::after,
+.header-burger-btn .burger-inner::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner,
+.header-burger-btn.burger--active .burger-inner {
+  -webkit-transform: rotate(-765deg);
+          transform: rotate(-765deg);
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::before, .header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::after {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::before,
+.header-burger-btn.burger--active .burger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+.header-burger-btn.hamburger--vortex-r.burger--active .burger-inner::after,
+.header-burger-btn.burger--active .burger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
