@@ -24,7 +24,12 @@
 
 .header-burger-btn {
   padding: $hamburger-padding-y $hamburger-padding-x;
-  display: inline-block;
+  height: $hamburger-layer-width;
+  width: $hamburger-layer-width;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
 
   transition-property: opacity, filter;
